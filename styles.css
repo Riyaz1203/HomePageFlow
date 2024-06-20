@@ -12,14 +12,14 @@ html {
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
 }
 
 .home{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: relative;
 }
@@ -108,14 +108,14 @@ body{
 }
 
 .top-logo-text{
-    padding-top: 50px;
+    padding-top: 25px;
     padding-left: 60px;
+    z-index: 1000;
 }
 
 .top-logo-text h1{
     font-size: 64px;
     font-weight: 700;
-    line-height: 76px;
     text-align: left;
     color: white;
 }
@@ -145,7 +145,7 @@ body{
 
 .streaming-logos{
     display: flex;
-    gap: 100px;
+    gap: 8%;
     padding: 0px 130px;
     align-items: center;
 }
@@ -154,3 +154,323 @@ body{
     text-align: center;
     align-items: center;
 }
+
+@media screen and (max-width:1400px) {
+    
+    .now-playing{
+        background-color: white;
+        margin-top: 100px;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    
+    .now-playing h1{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 76px;
+        text-align: center;
+    }
+    
+    .now-playing h2{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 30px 20%;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    
+    .streaming-logos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 5%;
+        padding: 0px ;
+        align-items: center;
+    }
+    
+    .streaming-logos .imgg{
+        text-align: center;
+        align-items: center;
+    
+    }
+    .streaming-logos .imgg img{
+        height: 100%;
+        width: 100%;
+    }
+    .center-text{
+        width: 700px;
+        height: 390px;
+        background-color: rgba(70, 75, 205, 1);
+        border-radius: 24px;
+        z-index: 98;
+        position: absolute;
+        left: 27%;
+        bottom: 0;
+        padding-left: 20%;
+        padding-top: 40px;
+        padding-right: 100px;
+    }
+    .center-text h1{
+        font-size: 18px;
+        font-weight: 700;
+        text-align:  left;
+    }
+    
+    .center-text h2 {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .center-text a{
+        color: white;
+        text-decoration: none;
+        background-color:rgba(40, 43, 119, 1);
+        padding: 10px 30px;
+        border-radius: 24px;
+    }
+    .center-image img{
+        width: 70%;
+    }
+    .top-logo-text{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    }
+    @media screen and (max-width:1000px) {
+        .center-text{
+            width: 500px;
+            height: 290px;
+            background-color: rgba(70, 75, 205, 1);
+            border-radius: 24px;
+            z-index: 98;
+            position: absolute;
+            left: 27%;
+            bottom: 35%;
+            padding-left: 14%;
+            padding-top: 10px;
+            padding-right: 0;
+        }
+        .center-text h1{
+            font-size: 15px;
+            font-weight: 700;
+            text-align:  left;
+        }
+        
+        .center-text h2 {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            color: white;
+        }
+        
+        .center-text a{
+            color: white;
+            font-size: 10px;
+            text-decoration: none;
+            background-color:rgba(40, 43, 119, 1);
+            padding: 10px 30px;
+            border-radius: 12px;
+        }
+        .center-image img{
+            width: 50%;
+        }
+        .top-logo-text{
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+        .center-image{
+            left: 15%;
+            bottom: 50%;
+        }
+        .top-main-image{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
+        .top-main-image img{
+            width: 350px;
+            height: 180px;
+            opacity: 28%;
+        }
+        
+        .bottom-main-image{
+            position: absolute;
+            bottom: 15%;
+            left: 0;
+            background-color: black;
+            z-index: 97;
+        }
+        
+        .bottom-main-image img{
+            width: 350px;
+            height: 180px;
+            opacity: 28%;
+        }
+        }
+
+        @media screen and (max-width:700px) {
+            .center-text{
+                width: 60%;
+                height: 60%;
+                background-color: rgba(70, 75, 205, 1);
+                border-radius: 24px;
+                z-index: 98;
+                position: absolute;
+                bottom: 10%;
+                padding-left: 14%;
+                padding-top: 20%;
+                padding-right: 0;
+            }
+            .center-text h1{
+                font-size: 14px;
+                font-weight: 700;
+                text-align:  left;
+            }
+            
+            .center-text h2 {
+                font-size: 10px;
+                font-weight: 400;
+                text-align: left;
+                color: white;
+            }
+            
+            .center-text a{
+                color: white;
+                font-size: 10px;
+                text-decoration: none;
+                background-color:rgba(40, 43, 119, 1);
+                padding: 10px 30px;
+                border-radius: 24px;
+            }
+            .center-image img{
+                width: 50%;
+            }
+            .top-logo-text{
+                padding-top: 10px;
+                padding-left: 30px;
+            }
+            .top-logo-text h1{
+                font-size: 2rem;
+            }
+            .center-image{
+                left: 20%;
+                bottom: 60%;
+            }
+            .top-main-image{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            
+            .top-main-image img{
+                width: 150px;
+                height: 100px;
+                opacity: 28%;
+            }
+            
+            .bottom-main-image{
+                position: absolute;
+                bottom:10%;
+                left: 0;
+                background-color: black;
+                z-index: 97;
+            }
+            
+            .bottom-main-image img{
+                width: 200px;
+                height: 300px;
+                opacity: 28%;
+            }
+            .home{
+                height: 100%;
+                width: 100%;
+                position: relative;
+            }
+            }
+
+            @media screen and (max-width:400px) {
+                .center-text{
+                    width: 60%;
+                    height: 60%;
+                    background-color: rgba(70, 75, 205, 1);
+                    border-radius: 24px;
+                    z-index: 98;
+                    position: absolute;
+                    bottom: 10%;
+                    padding-left: 14%;
+                    padding-top: 20%;
+                    padding-right: 0;
+                }
+                .center-text h1{
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-align:  left;
+                    ;line-height: normal;
+                }
+                
+                .center-text h2 {
+                    font-size: 10px;
+                    line-height: 15px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: white;
+                }
+                
+                .center-text a{
+                    color: white;
+                    font-size: 10px;
+                    text-decoration: none;
+                    background-color:rgba(40, 43, 119, 1);
+                    padding: 10px 30px;
+                    border-radius: 24px;
+                }
+                .center-image img{
+                    width: 50%;
+                }
+                .top-logo-text{
+                    padding-top: 10px;
+                    padding-left: 30px;
+                }
+                .top-logo-text h1{
+                    font-size: 2rem;
+                }
+                .center-image{
+                    left: 20%;
+                    bottom: 60%;
+                }
+                .top-main-image{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+                
+                .top-main-image img{
+                    width: 150px;
+                    height: 100px;
+                    opacity: 28%;
+                }
+                
+                .bottom-main-image{
+                    position: absolute;
+                    bottom:10%;
+                    left: 0;
+                    background-color: black;
+                    z-index: 97;
+                }
+                
+                .bottom-main-image img{
+                    width: 200px;
+                    height: 300px;
+                    opacity: 28%;
+                }
+                .home{
+                    height: 100%;
+                    width: 100%;
+                    position: relative;
+                }
+                }
